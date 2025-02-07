@@ -1,0 +1,14 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Nig3l
+	mail = nig3lpro@gmail.com
+	email = nig3lpro@gmail.com
+[init]
+	defaultBranch = master
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[pull]
+	rebase = false
