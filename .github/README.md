@@ -25,4 +25,5 @@ yadm pull
 ## Available Configs
 
 * [nvim](https://neovim.io/)
+* [vscode](https://code.visualstudio.com/)
 
