@@ -16,8 +16,7 @@ colorscheme darcula
 nmap <C-S-UP> :m-2<CR>  
 nmap <C-S-DOWN> :m+1<CR>
 nmap <C-d> yyp
-nmap <C-S-F> :Telescope find_files<CR>
-nmap <C-S-F> :Telescope find_files<CR>
+map <C-S-n> :Telescope find_files<CR>
 
 let g:netrw_banner = 0
 let g:netrw_browse_split = 4
@@ -25,7 +24,10 @@ let g:netrw_winsize = 25
 let g:netrw_alto = 1
 let g:netrw_altv = 1
 
-map <silent> <C-E> :Lexplore<CR>
+let mapleader=" "
+nnoremap <leader>ff <cmd>Telescop find_files<cr>
+nnoremap <leader>fg <cmd>Telescop live_grep<cr>
+nnoremap <leader>fb <cmd>Telescop buffers<cr>
 
 lua << EOF
 require'nvim-treesitter.configs'.setup {
