@@ -10,5 +10,6 @@
     "workbench.colorTheme": "JetBrains New UI Dark Theme",
     "workbench.activityBar.location": "bottom",
     "window.menuBarVisibility": "toggle",
-    "security.workspace.trust.enabled": false
+    "security.workspace.trust.enabled": false,
+    "window.customTitleBarVisibility": "auto"
 }
