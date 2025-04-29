@@ -1,15 +1,17 @@
 {
   "workbench.statusBar.visible": false,
     "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false,
     "window.titleBarStyle": "native",
     "apc.electron": {
       "frame": false
     },
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
-    "workbench.colorTheme": "JetBrains New UI Dark Theme",
-    "workbench.activityBar.location": "bottom",
-    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "JetBrains Dark New UI",
+    "workbench.activityBar.location": "top",
     "security.workspace.trust.enabled": false,
-    "window.customTitleBarVisibility": "auto"
+    "debug.onTaskErrors": "showErrors",
+    "window.customTitleBarVisibility": "never",
+    "workbench.startupEditor": "none",
+    "explorer.confirmDelete": false,
+    "diffEditor.ignoreTrimWhitespace": false
 }
