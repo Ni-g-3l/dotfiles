@@ -1,0 +1,32 @@
+#/bin/bash
+
+echo "1. Setup Terminal -------------------------------------------"
+
+# Install Cargo
+curl https://sh.rustup.rs -sSf | sh
+
+# Install ZelliJ
+cargo install --locked zellij
+
+# Install Starship
+curl -sS https://starship.rs/install.sh | sh
+
+# Install FastFetch
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
+sudo apt update
+sudo apt install fastfetch
+
+# Install nvim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+
+
+
+
+
+
