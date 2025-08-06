@@ -6,7 +6,7 @@
       "frame": false
     },
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
-    "workbench.colorTheme": "JetBrains Dark New UI",
+    "workbench.colorTheme": "Jetbrains Fleet",
     "workbench.activityBar.location": "top",
     "security.workspace.trust.enabled": false,
     "debug.onTaskErrors": "showErrors",
@@ -14,5 +14,7 @@
     "workbench.startupEditor": "none",
     "explorer.confirmDelete": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "extensions.ignoreRecommendations": true
 }
