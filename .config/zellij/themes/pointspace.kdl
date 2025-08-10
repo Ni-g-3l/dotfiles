@@ -1,0 +1,15 @@
+themes {
+    pointspace {
+        fg 240 240 240
+        bg 30 30 30
+        black 30 30 30
+        red 255 85 85
+        green 255 184 108
+        yellow 241 250 140
+        blue 98 114 164
+        magenta 255 121 198
+        cyan 139 233 253
+        white 255 255 255
+        orange 255 184 108
+    }
+}
