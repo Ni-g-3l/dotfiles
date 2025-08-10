@@ -1,4 +1,5 @@
 set number
+set clipboard+=unnamedplus
 
 call plug#begin()
  Plug 'itchyny/lightline.vim'
