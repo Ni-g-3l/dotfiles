@@ -20,6 +20,7 @@ alias "u."='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-
 alias "g."="git"
 alias "d."="htop"
 alias "f."="yazi $1"
+alias "sf."="sh $HOME/.config/yadm/tools/filemanager/sf.sh $@"
 alias "lg."="open_git_ui"
 alias "e."="open_editor"
 
