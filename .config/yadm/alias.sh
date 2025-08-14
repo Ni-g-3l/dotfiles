@@ -17,6 +17,7 @@ alias "u."='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-
 
 ## Tools
 
+alias "cd"="z"
 alias "g."="git"
 alias "d."="htop"
 alias "f."="yazi $1"
