@@ -9,6 +9,8 @@ for script in $YADM_FOLDER/tools/**/install.sh; do
   fi
 done
 
+sh $YADM_FOLDER/theme/install.sh
+
 STARTUP_FILE="$HOME/.config/yadm/startup.sh"
 # Check if yadm startup is added to .bashrc if not add it 
 cat $HOME/.bashrc | grep $STARTUP_FILE
