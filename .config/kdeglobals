@@ -142,6 +142,7 @@ History Items[$e]=file:$HOME/.config/yadm
 [General]
 AccentColor=233,100,58
 BrowserApplication=google-chrome.desktop
+ColorScheme=GraphiteDark
 ColorSchemeHash=404c9c568102723de6d5694e4902840a6a5076c6
 
 [KDE]

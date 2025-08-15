@@ -22,7 +22,7 @@ DialogHeight=993
 DialogWidth=1912
 
 [Containments][29][Configuration]
-PreloadWeight=34
+PreloadWeight=26
 
 [Containments][29][General]
 ToolBoxButtonState=topcenter
@@ -30,7 +30,8 @@ ToolBoxButtonX=564
 ToolBoxButtonY=29
 
 [Containments][29][Wallpaper][org.kde.image][General]
-Image=file:///home/nig3l/.config/yadm/theme/wallpaper.png
+Image=file:///home/nig3l/.local/share/wallpapers/Nothing1/contents/images/5521x2487.png
+SlidePaths=/home/nig3l/.local/share/wallpapers,/usr/share/plasma/wallpapers,/usr/share/wallpapers
 
 [Containments][30]
 activityId=
