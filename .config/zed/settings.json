@@ -7,7 +7,8 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "icon_theme": "JetBrains New UI Icons (Dark)",
+  "base_keymap": "JetBrains",
+  "icon_theme": "JetBrains Icons Dark",
   "collaboration_panel": {
     "dock": "left",
     "button": false
@@ -25,6 +26,6 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "JetBrains Dark"
+    "dark": "Ayu Dark"
   }
 }

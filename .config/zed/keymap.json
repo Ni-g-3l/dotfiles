@@ -93,5 +93,11 @@
     "bindings": {
       "enter": "project_panel::Open"
     }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-w": null
+    }
   }
 ]
