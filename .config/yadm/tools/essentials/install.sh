@@ -12,7 +12,8 @@ fi
 fzf --version
 tool_installed=$?
 if [ $tool_installed != 0 ]; then
-    sudo apt install fzf
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
 fi
 
 rg --version
