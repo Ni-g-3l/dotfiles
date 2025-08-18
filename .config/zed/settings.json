@@ -13,16 +13,13 @@
     "dock": "left",
     "button": false
   },
-  "edit_predictions": {
-    "button": false
-  },
   "telemetry": {
     "metrics": false,
     "diagnostics": false
   },
   "show_edit_predictions": false,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "ui_font_size": 12,
+  "buffer_font_size": 10,
   "theme": {
     "mode": "system",
     "light": "One Light",
