@@ -1,6 +1,6 @@
 # Alias declaration
 
-export EDITOR="nvim"
+export EDITOR="micro"
 
 ## System 
 
