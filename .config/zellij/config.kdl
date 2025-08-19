@@ -144,7 +144,8 @@ keybinds clear-defaults=true {
         bind "Alt l" { MoveFocusOrTab "right"; }
         bind "Alt n" { NewPane; }
         bind "Alt o" { MoveTab "right"; }
-        bind "Ctrl q" { Quit; }
+        bind "Ctrl Shift f" { Run "sh" "/home/nig3l/.config/yadm/shell/scripts/search_value.sh" ".";}
+        bind "Ctrl Shift n" { Run "sh" "/home/nig3l/.config/yadm/shell/scripts/search_file.sh" ".";}
     }
     shared_except "locked" "move" {
         bind "Ctrl h" { SwitchToMode "move"; }
