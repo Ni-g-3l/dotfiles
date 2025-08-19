@@ -20,4 +20,4 @@ FZF_DEFAULT_COMMAND="rg --files" fzf \
   --preview "rg -i --pretty --context 2 {q} {}" | cut -d":" -f1,2
 )
 
-[ -n $selected ] && nvim "$selected" # open multiple files in editor
+[ -n $selected ] && $EDITOR "$selected" # open multiple files in editor

@@ -15,5 +15,5 @@ alias "d."="htop"
 alias "f."="yazi $1"
 alias "sf."="sh $HOME/.config/yadm/tools/filemanager/sf.sh $@"
 alias "lg."="lazygit"
-alias "e."="nvim"
+alias "e."="$EDITOR"
 
