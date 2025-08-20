@@ -29,6 +29,17 @@ theme = "afterglow"
 # Example:
 padding-x = 10
 
+confirm-before-quit = false
+
+[bindings]
+keys = [
+  { key = "n", with = "control | shift", action = "ReceiveChar" },
+  { key = "f", with = "control | shift", action = "ReceiveChar" },
+  { key = "b", with = "control | shift", action = "ReceiveChar" },
+  { key = "r", with = "control | shift", action = "ReceiveChar" }
+]
+
+
 # Padding-y
 #
 # define y axis padding based on a format [top, bottom]
@@ -340,12 +351,6 @@ padding-x = 10
 # More information in: https://raphamorim.io/rio/docs/key-bindings
 #
 # Example:
-[bindings]
-keys = [
-  { key = "n", with = "control | shift", action = "ReceiveChar" },
-  { key = "f", with = "control | shift", action = "ReceiveChar" },
-  { key = "b", with = "control | shift", action = "ReceiveChar" }
-]
 # Platform
 #
 # Rio now allows you to have different configurations per OS
