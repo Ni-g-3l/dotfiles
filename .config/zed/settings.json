@@ -7,8 +7,30 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "disable_ai": true,
+  "inlay_hints": {
+    "enabled": true,
+    "show_value_hints": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "show_background": false,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50,
+    "toggle_on_modifiers_press": {
+      "control": false,
+      "alt": false,
+      "shift": false,
+      "platform": false,
+      "function": false
+    }
+  },
   "base_keymap": "JetBrains",
-  "icon_theme": "JetBrains Icons Dark",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "JetBrains Icons Dark",
+    "dark": "JetBrains Icons Dark"
+  },
   "collaboration_panel": {
     "dock": "left",
     "button": false
@@ -18,10 +40,10 @@
     "diagnostics": false
   },
   "show_edit_predictions": false,
-  "ui_font_size": 10,
-  "buffer_font_size": 10,
+  "ui_font_size": 18.0,
+  "buffer_font_size": 14.0,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
     "dark": "Ayu Dark"
   }
