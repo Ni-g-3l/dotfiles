@@ -4,9 +4,15 @@ THEME_ARCHIVE=nothing.zip
 
 cd /tmp
 
-git clone git@github.com:vinceliuice/Graphite-gtk-theme.git
-cd Graphite-gtk-theme
-./install.sh
+sudo apt install gtk2-engines-murrine flatpak -y
 
-dconf write /org/gnome/shell/extensions/user-theme/name "'Graphite-orange-Dark'"
+sudo flatpak override --filesystem=$HOME/.themes
+sudo flatpak override --filesystem=$HOME/.icons
+sudo flatpak override --filesystem=xdg-config/gtk-4.0
 
+
+git clone git@github.com:Fausto-Korpsvart/Gruvbox-GTK-Theme.git
+cd /tmp/Gruvbox-GTK-Theme/themes
+./install.sh -t "orange"
+
+gsettings set org.gnome.desktop.interface gtk-theme "Gruvbox-Orange-Dark"
