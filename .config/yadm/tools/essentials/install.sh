@@ -1,4 +1,4 @@
-sudo apt install build-essential git git-lfs curl xclip net-tools
+sudo apt install build-essential git git-lfs curl xclip net-tools htop
 
 cargo -V 
 tool_installed=$?
