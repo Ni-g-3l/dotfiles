@@ -243,7 +243,7 @@ load_plugins {
 // Default: default
 // 
 // theme "atelier-sulphurpool"
-theme "kanagawa"
+theme "gruvbox-dark"
  
 // Choose the base input mode of zellij.
 // Default: normal
