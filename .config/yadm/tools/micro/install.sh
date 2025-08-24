@@ -1,4 +1,4 @@
-micro -v
+micro --version
 
 tool_installed=$? 
 
