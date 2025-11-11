@@ -18,6 +18,22 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
+  	pkgs.bottom
+  	pkgs.fzf
+  	pkgs.git
+  	pkgs.gnome-shell
+  	pkgs.gnome-shell-extensions
+  	pkgs.gnome-tweaks
+  	pkgs.lazygit
+  	pkgs.micro
+  	pkgs.rio
+  	pkgs.ripgrep
+  	pkgs.starship
+  	pkgs.sushi
+  	pkgs.zed-editor
+  	pkgs.zellij
+  	pkgs.zoxide
+  	
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
