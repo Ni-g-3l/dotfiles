@@ -4,6 +4,10 @@ source $YADM_FOLDER/alias.sh
 
 if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then . $HOME/.nix-profile/etc/profile.d/nix.sh; fi
 
+if [ -f "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh" ]; then
+  . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+fi
+
 . "$HOME/.cargo/env"
 
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
