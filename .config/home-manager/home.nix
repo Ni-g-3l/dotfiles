@@ -33,7 +33,7 @@
   	pkgs.zed-editor
   	pkgs.zellij
   	pkgs.zoxide
-  	
+
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -65,6 +65,19 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    #
+    ".config/bottom/bottom.toml".source = bottom/bottom.toml;
+
+    ".config/micro/bindings.json".source = micro/bindings.json;
+    ".config/micro/settings.json".source = micro/settings.json;
+    ".config/micro/colorschemes/gruvbox.micro".source = micro/colorschemes/gruvbox.micro;
+
+    ".config/rio/config.toml".source = rio/config.toml;
+    ".config/rio/themes/gruvbox.toml".source = rio/themes/gruvbox.toml;
+
+    ".config/starship.toml".source = starship/starship.toml;
+
+    ".config/zellij/config.kdl".source = zellij/config.kdl;
   };
 
   # Home Manager can also manage your environment variables through
@@ -84,7 +97,7 @@
   #  /etc/profiles/per-user/nig3l/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "micro";
   };
 
   # Let Home Manager install and manage itself.

@@ -1,0 +1,8 @@
+{
+  "colorscheme": "gruvbox",
+  "lsp.server": "python=pyls,cpp=clangd",
+  "lsp.formatOnSave": true,
+  "lsp.tabcompletion": true,
+  "lsp.ignoreTriggerCharacters": "completion,signature",
+  "lsp.autocompleteDetails": false
+}
