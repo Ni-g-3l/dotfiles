@@ -78,6 +78,7 @@
     ".config/starship.toml".source = starship/starship.toml;
 
     ".config/zellij/config.kdl".source = zellij/config.kdl;
+    ".config/zellij/layouts/base.kdl".source = zellij/layouts/base.kdl;
   };
 
   # Home Manager can also manage your environment variables through

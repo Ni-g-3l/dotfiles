@@ -267,7 +267,7 @@ default_layout "base"
 // The folder in which Zellij will look for layouts
 // (Requires restart)
 //
-layout_dir "$HOME/.config/zellij/layouts"
+// layout_dir "$HOME/.config/zellij/layouts"
 
 // The folder in which Zellij will look for themes
 // (Requires restart)
