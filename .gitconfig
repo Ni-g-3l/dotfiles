@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Nig3l
-	mail = nig3lpro@gmail.com
-	email = nig3lpro@gmail.com
+	mail = cots.max@gmail.com
+	email = cots.max@gmail.com
 [init]
 	defaultBranch = master
 [filter "lfs"]
