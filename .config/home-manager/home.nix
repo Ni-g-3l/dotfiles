@@ -26,7 +26,6 @@
   	pkgs.gnome-tweaks
   	pkgs.lazygit
   	pkgs.micro
-  	pkgs.rio
   	pkgs.ripgrep
   	pkgs.starship
   	pkgs.sushi
@@ -74,6 +73,8 @@
 
     ".config/rio/config.toml".source = rio/config.toml;
     ".config/rio/themes/gruvbox.toml".source = rio/themes/gruvbox.toml;
+    ".var/app/com.rioterm.Rio/config/rio/config.toml".source = rio/config.toml;
+    ".var/app/com.rioterm.Rio/config/rio/themes/gruvbox.toml".source = rio/themes/gruvbox.toml;
 
     ".config/starship.toml".source = starship/starship.toml;
 
