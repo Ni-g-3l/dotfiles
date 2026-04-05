@@ -16,9 +16,7 @@ in
 
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
-      pkgs.rustc
-      pkgs.cargo
-      pkgs.rustup
+      rustup
       pkgs.cmake
       pkgs.vlang
     ] ++ lib.optionals cfg.docker [

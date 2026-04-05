@@ -15,7 +15,6 @@ in
 
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
-      buildEssential
       git
       curl
       xclip
@@ -28,6 +27,7 @@ in
       lazygit
       micro
       ripgrep
+      starship
       zellij
       zoxide
       go-task

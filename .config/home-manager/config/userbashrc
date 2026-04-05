@@ -1,23 +1,9 @@
 # Shell initialization
 # Source this file: source ~/.userbashrc
 
-# Path
-export PATH="$PATH:$HOME/.local/bin"
-
-# Environment variables
-export EDITOR="micro"
-export CARGO_HOME="$HOME/.cargo"
-export RUSTUP_HOME="$HOME/.rustup"
-
-# Aliases
-alias s.='source ~/.bashrc'
-alias u.='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y'
-alias g.='git'
-alias d.='btm'
-alias f.='yazi'
-alias lg.='lazygit'
-alias e.='$EDITOR'
-
+# Auto-start zellij
 eval "$(zellij setup --generate-auto-start bash)"
-eval "$(zoxide init bash)"
-eval "$(fzf --bash)"
+
+# Additional shell setup
+
+
