@@ -229,10 +229,6 @@
     ".config/rio/config.toml".source = ./config/rio/config.toml;
     ".config/rio/themes/gruvbox.toml".source = ./config/rio/themes/gruvbox.toml;
 
-    # Rio Flatpak version config
-    ".var/app/com.rioterm.Rio/config/rio/config.toml".source = ./config/rio/config.toml;
-    ".var/app/com.rioterm.Rio/config/rio/themes/gruvbox.toml".source = ./config/rio/themes/gruvbox.toml;
-
     # --------------------------------------------------------------------------
     # Zellij - Terminal multiplexer
     # --------------------------------------------------------------------------

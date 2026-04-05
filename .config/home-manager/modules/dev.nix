@@ -12,6 +12,7 @@ in
   options.dev = {
     enable = lib.mkEnableOption "Development tools";
     rio = lib.mkEnableOption "Rio terminal emulator";
+    docker = lib.mkEnableOption "Docker and Docker Compose";
   };
 
   config = lib.mkIf cfg.enable {
@@ -22,7 +23,11 @@ in
       pkgs.cmake
       pkgs.vlang
       pkgs.zed-editor
-      (lib.mkIf cfg.rio [ pkgs.flatpak ])
+    ] ++ lib.optionals cfg.rio [
+      pkgs.rio
+    ] ++ lib.optionals cfg.docker [
+      pkgs.docker
+      pkgs.docker-compose
     ];
   };
 }
