@@ -128,21 +128,6 @@
   #############################################################################
 
   home.packages = with pkgs; [
-    # System monitoring
-    # bottom (btm) - Cross-platform visual process monitor
-    # Alternative: htop (in essentials module)
-    bottom
-
-    # Fuzzy finder
-    # fzf - Command-line fuzzy finder
-    # Used by many tools (vim, zsh, bash) for completion
-    fzf
-
-    # Version control
-    # git - Distributed version control system
-    # Essential for software development
-    git
-
     # GNOME desktop integration
     # gnome-shell - GNOME Shell desktop
     # gnome-shell-extensions - Extensions for GNOME Shell
@@ -151,22 +136,6 @@
     gnome-shell
     gnome-shell-extensions
     gnome-tweaks
-
-    # Git TUI
-    # lazygit - Simple terminal UI for Git commands
-    # Usage: Press '?' for help, 'q' to quit
-    # Alternative: lazygit (also in shell module)
-    lazygit
-
-    # Text editor
-    # micro - Modern and intuitive terminal text editor
-    # Alternatives: nvim, vim, emacs, nano
-    micro
-
-    # Search tool
-    # ripgrep (rg) - Fast grep alternative
-    # Usage: rg <pattern> <directory>
-    ripgrep
 
     # File previewer
     # sushi - Quick previewer for GNOME Files (Nautilus)
@@ -187,26 +156,11 @@
     docker
     docker-compose
 
-    # Task runner
-    # go-task - Task runner / simpler Make alternative
-    go-task
 
     # Code editor
     # zed - High-performance code editor
     # Alternative: vscode, jetbrains-toolbox, subl
     zed-editor
-
-    # Terminal multiplexer
-    # zellij - Terminal multiplexer (like tmux/screen)
-    # Configuration: config/zellij/config.kdl
-    # Alternative: tmux (in shell module)
-    zellij
-
-    # Directory jumper
-    # zoxide - Smarter cd that learns your habits
-    # Usage: z <directory> (fuzzy matches)
-    # Alternative: z (autojump), pushd/popd
-    zoxide
 
     # Add more packages here:
     # pkgs.tree      # Display directory tree

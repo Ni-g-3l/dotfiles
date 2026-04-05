@@ -15,12 +15,22 @@ in
 
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
-      pkgs.buildEssential
-      pkgs.git
-      pkgs.curl
-      pkgs.xclip
-      pkgs.nettools
-      pkgs.htop
+      buildEssential
+      git
+      curl
+      xclip
+      nettools
+      htop
+
+      # Additional CLI tools
+      bottom
+      fzf
+      lazygit
+      micro
+      ripgrep
+      zellij
+      zoxide
+      go-task
     ];
   };
 }
