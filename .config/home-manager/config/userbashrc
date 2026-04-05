@@ -9,11 +9,6 @@ export EDITOR="micro"
 export CARGO_HOME="$HOME/.cargo"
 export RUSTUP_HOME="$HOME/.rustup"
 
-eval "$(starship init bash)"
-eval "$(zellij setup --generate-auto-start bash)"
-eval "$(zoxide init bash)"
-eval "$(fzf --bash)"
-
 # Aliases
 alias s.='source ~/.bashrc'
 alias u.='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y'
@@ -22,4 +17,7 @@ alias d.='btm'
 alias f.='yazi'
 alias lg.='lazygit'
 alias e.='$EDITOR'
-alias zellij-new='zellij attach -c -d main'
+
+eval "$(zellij setup --generate-auto-start bash)"
+eval "$(zoxide init bash)"
+eval "$(fzf --bash)"

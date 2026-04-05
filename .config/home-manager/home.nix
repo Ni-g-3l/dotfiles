@@ -151,11 +151,6 @@
     # Usage: rg <pattern> <directory>
     ripgrep
 
-    # Shell prompt
-    # starship - Cross-shell prompt with git integration
-    # Configuration: config/starship/starship.toml
-    starship
-
     # File previewer
     # sushi - Quick previewer for GNOME Files (Nautilus)
     # Alternative: gnome-sushi
@@ -237,11 +232,6 @@
     # Rio Flatpak version config
     ".var/app/com.rioterm.Rio/config/rio/config.toml".source = ./config/rio/config.toml;
     ".var/app/com.rioterm.Rio/config/rio/themes/gruvbox.toml".source = ./config/rio/themes/gruvbox.toml;
-
-    # --------------------------------------------------------------------------
-    # Starship - Shell prompt
-    # --------------------------------------------------------------------------
-    ".config/starship.toml".source = ./config/starship/starship.toml;
 
     # --------------------------------------------------------------------------
     # Zellij - Terminal multiplexer
