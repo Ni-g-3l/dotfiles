@@ -2,7 +2,7 @@
 # Applications Module
 ###############################################################################
 
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 let
   cfg = config.apps;
@@ -23,7 +23,7 @@ in
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; lib.concatLists [
       (lib.optionals cfg.discord [ discord ])
-      (lib.optionals cfg.zen-browser [ flatpak gtk-engine-murrine ])
+      (lib.optionals cfg.zen-browser [ inputs.zen-browser.packages.${pkgs.system}.default gtk-engine-murrine ])
       (lib.optionals cfg.blender [ blender ])
       (lib.optionals cfg.darktable [ darktable ])
       (lib.optionals cfg.gimp [ gimp ])

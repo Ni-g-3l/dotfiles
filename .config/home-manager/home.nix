@@ -181,6 +181,16 @@
     mesa
     libglvnd
 
+    # Containerization
+    # docker - Container runtime
+    # docker-compose - Multi-container orchestration
+    docker
+    docker-compose
+
+    # Task runner
+    # go-task - Task runner / simpler Make alternative
+    go-task
+
     # Code editor
     # zed - High-performance code editor
     # Alternative: vscode, jetbrains-toolbox, subl

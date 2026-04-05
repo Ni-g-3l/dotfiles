@@ -8,9 +8,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     rio.url = "github:raphamorim/rio/main";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, rio, ... }:
+  outputs = { self, nixpkgs, home-manager, rio, zen-browser, ... } @ inputs:
 
     let
       system = "x86_64-linux";
@@ -23,6 +24,7 @@
     {
       homeConfigurations.nig3l = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+        extraSpecialArgs = { inherit inputs; };
         modules = [
           ({ pkgs, ... }: {
             programs.rio = {
