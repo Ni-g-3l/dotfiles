@@ -256,12 +256,13 @@
     ".bash_profile".text = ''
       if [ -f ~/.bashrc ]; then
         source ~/.bashrc
+        source ~/.userbashrc
       fi
     '';
 
     # --------------------------------------------------------------------------
     # User bashrc (shell setup: starship, zellij, zoxide, aliases)
     # --------------------------------------------------------------------------
-    ".config/userbashrc".source = ./config/userbashrc;
+    ".userbashrc".source = ./config/userbashrc;
   };
 }
