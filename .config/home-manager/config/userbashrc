@@ -5,5 +5,3 @@
 eval "$(zellij setup --generate-auto-start bash)"
 
 # Additional shell setup
-
-

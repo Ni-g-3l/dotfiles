@@ -321,6 +321,11 @@
     ".config/rio/themes/gruvbox.toml".source = ./config/rio/themes/gruvbox.toml;
 
     # --------------------------------------------------------------------------
+    # Starship - Shell prompt
+    # --------------------------------------------------------------------------
+    ".config/starship.toml".source = ./config/starship/starship.toml;
+
+    # --------------------------------------------------------------------------
     # Zellij - Terminal multiplexer
     # --------------------------------------------------------------------------
     # Terminal multiplexer with layout support
