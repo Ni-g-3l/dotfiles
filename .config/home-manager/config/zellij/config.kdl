@@ -1,0 +1,72 @@
+keybinds clear-defaults=true {
+    pane {
+        bind "left" { MoveFocus "left"; }
+        bind "down" { MoveFocus "down"; }
+        bind "up" { MoveFocus "up"; }
+        bind "right" { MoveFocus "right"; }
+        bind "d" { NewPane "down"; SwitchToMode "normal"; }
+        bind "f" { ToggleFocusFullscreen; SwitchToMode "normal"; }
+        bind "n" { NewPane "right"; SwitchToMode "normal"; }
+        bind "Ctrl p" { SwitchToMode "pane"; }
+        bind "r" { NewPane "right"; SwitchToMode "normal"; }
+    }
+    tab {
+        bind "left" { GoToPreviousTab; }
+        bind "right" { GoToNextTab; }
+        bind "n" { NewTab; SwitchToMode "normal"; }
+        bind "r" { SwitchToMode "renametab"; TabNameInput 0; }
+        bind "Ctrl t" { SwitchToMode "tab"; }
+        bind "x" { CloseTab; SwitchToMode "normal"; }
+    }
+    resize {
+        bind "left" { Resize "Increase left"; }
+        bind "down" { Resize "Increase down"; }
+        bind "up" { Resize "Increase up"; }
+        bind "right" { Resize "Increase right"; }
+        bind "Ctrl r" { SwitchToMode "resize"; }
+    }
+    move {
+        bind "left" { MovePane "left"; }
+        bind "down" { MovePane "down"; }
+        bind "up" { MovePane "up"; }
+        bind "right" { MovePane "right"; }
+        bind "Ctrl m" { SwitchToMode "move"; }
+    }
+    scroll {
+        bind "e" { EditScrollback; SwitchToMode "normal"; }
+    }
+    shared_except "locked" {
+        bind "Ctrl g" { SwitchToMode "locked"; }
+    }
+    shared_except "locked" "move" {
+        bind "Ctrl m" { SwitchToMode "move"; }
+    }
+    shared_except "locked" "tab" {
+        bind "Ctrl t" { SwitchToMode "tab"; }
+    }
+    shared_except "locked" "pane" {
+        bind "Ctrl p" { SwitchToMode "pane"; }
+    }
+    shared_except "locked" "resize" {
+        bind "Ctrl r" { SwitchToMode "resize"; }
+    }
+    shared_except "normal" "locked" {
+        bind "enter" { SwitchToMode "normal"; }
+        bind "esc" { SwitchToMode "normal"; }
+    }
+}
+
+plugins {
+    about location="zellij:about"
+    compact-bar location="zellij:compact-bar"
+    configuration location="zellij:configuration"
+    session-manager location="zellij:session-manager"
+}
+
+theme "gruvbox-dark"
+default_layout "base"
+pane_frames false
+on_force_close "quit"
+copy_command "xclip -selection clipboard"
+show_startup_tips false
+show_release_notes false

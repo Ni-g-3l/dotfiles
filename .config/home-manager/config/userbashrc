@@ -1,0 +1,47 @@
+# Shell initialization
+# Source this file: source ~/.config/userbashrc
+
+# Path
+export PATH="$PATH:$HOME/.local/bin"
+
+# Environment variables
+export EDITOR="micro"
+export CARGO_HOME="$HOME/.cargo"
+export RUSTUP_HOME="$HOME/.rustup"
+
+# Starship prompt
+if command -v starship &> /dev/null; then
+  eval "$(starship init bash)"
+fi
+
+# Zellij shell integration
+if command -v zellij &> /dev/null; then
+  eval "$(zellij setup --generate-auto-start bash)"
+fi
+
+# Zoxide smart cd
+if command -v zoxide &> /dev/null; then
+  eval "$(zoxide init bash)"
+fi
+
+# FZF shell integration
+if command -v fzf &> /dev/null; then
+  eval "$(fzf --bash)"
+fi
+
+# Aliases
+alias s.='source ~/.bashrc'
+alias u.='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y'
+alias g.='git'
+alias d.='btm'
+alias f.='yazi'
+alias lg.='lazygit'
+alias e.='$EDITOR'
+alias zellij-new='zellij attach -c -d main'
+
+# Auto-start zellij in a new session
+if [ -z "$ZELLIJ" ] && command -v zellij &> /dev/null; then
+  if [ -t 0 ]; then
+    zellij 2>/dev/null || true
+  fi
+fi
