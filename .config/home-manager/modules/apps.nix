@@ -21,14 +21,14 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    home.packages = with pkgs; lib.filter (x: x != null) [
-      (lib.mkIf cfg.discord discord)
-      (lib.mkIf cfg.zen-browser [ flatpak gtk2-engines-murrine ])
-      (lib.mkIf cfg.blender blender)
-      (lib.mkIf cfg.darktable darktable)
-      (lib.mkIf cfg.gimp gimp)
-      (lib.mkIf cfg.bitwarden bitwarden-desktop)
-      (lib.mkIf cfg.spotify spotify)
+    home.packages = with pkgs; lib.concatLists [
+      (lib.optionals cfg.discord [ discord ])
+      (lib.optionals cfg.zen-browser [ flatpak gtk-engine-murrine ])
+      (lib.optionals cfg.blender [ blender ])
+      (lib.optionals cfg.darktable [ darktable ])
+      (lib.optionals cfg.gimp [ gimp ])
+      (lib.optionals cfg.bitwarden [ bitwarden-desktop ])
+      (lib.optionals cfg.spotify [ spotify ])
     ];
 
     home.sessionVariables = {

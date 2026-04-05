@@ -95,6 +95,23 @@
   programs.home-manager.enable = true;
 
   #############################################################################
+  # Application Modules
+  # ==========================================================================
+  # Enable desktop applications
+  #############################################################################
+
+  apps = {
+    enable = true;
+    discord = true;
+    zen-browser = true;
+    blender = true;
+    darktable = true;
+    gimp = true;
+    bitwarden = true;
+    spotify = true;
+  };
+
+  #############################################################################
   # Packages
   # ==========================================================================
   # List of packages to install. These come from nixpkgs.
@@ -155,6 +172,14 @@
     # sushi - Quick previewer for GNOME Files (Nautilus)
     # Alternative: gnome-sushi
     sushi
+
+    # Graphics libraries for WebGPU (wgpu)
+    # vulkan-loader - Vulkan loader
+    # mesa - OpenGL implementation
+    # libglvnd - GL Vendor-Neutral Dispatch library
+    vulkan-loader
+    mesa
+    libglvnd
 
     # Code editor
     # zed - High-performance code editor

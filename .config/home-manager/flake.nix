@@ -14,7 +14,10 @@
 
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs { inherit system; };
+      pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfree = true;
+      };
     in
 
     {
@@ -24,7 +27,7 @@
           ({ pkgs, ... }: {
             programs.rio = {
               enable = true;
-              package = rio.packages.${pkgs.system}.rio;
+              package = rio.packages.${system}.rio;
             };
           })
           ./home.nix

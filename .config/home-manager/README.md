@@ -19,7 +19,7 @@ This is a modular Home Manager configuration that manages your user environment 
 │   └── apps.nix                 # Desktop applications
 ├── config/                       # Tool configuration files
 │   ├── userbashrc              # Shell setup
-│   ├── starship/
+│   ├── rio/
 │   ├── zellij/
 │   └── ...
 └── README.md
