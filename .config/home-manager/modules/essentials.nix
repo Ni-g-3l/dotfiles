@@ -31,6 +31,7 @@ in
       zellij
       zoxide
       go-task
+      eza
     ];
   };
 }

@@ -17,11 +17,12 @@ in
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
       rustup
-      pkgs.cmake
-      pkgs.vlang
+      cmake
+      vlang
+      hugo
     ] ++ lib.optionals cfg.docker [
-      pkgs.docker
-      pkgs.docker-compose
+      docker
+      docker-compose
     ];
   };
 }

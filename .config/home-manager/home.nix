@@ -155,9 +155,9 @@
     "f." = "yazi";
     "lg." = "lazygit";
     "e." = "$EDITOR";
-    "ll" = "ls -alF";
-    "la" = "ls -A";
-    "l" = "ls -CF";
+    "ll" = "eza -la --icons --git";
+    "la" = "eza -a --icons";
+    "l" = "eza --icons";
     ".." = "cd ..";
     "..." = "cd ../..";
     "...." = "cd ../../..";
@@ -209,6 +209,8 @@
     gimp = true;
     bitwarden = true;
     spotify = true;
+    teamviewer = true;
+    rustdesk = true;
   };
 
   #############################################################################

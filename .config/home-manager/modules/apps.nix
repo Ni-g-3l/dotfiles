@@ -20,6 +20,8 @@ in
     bitwarden = lib.mkEnableOption "Bitwarden password manager";
     spotify = lib.mkEnableOption "Spotify music streaming";
     rio = lib.mkEnableOption "Rio terminal emulator";
+    teamviewer = lib.mkEnableOption "TeamViewer remote desktop";
+    rustdesk = lib.mkEnableOption "RustDesk remote desktop";
   };
 
   config = lib.mkIf cfg.enable {
@@ -33,6 +35,8 @@ in
       (lib.optionals cfg.rio [ rio ])
       (lib.optionals cfg.bitwarden [ bitwarden-desktop ])
       (lib.optionals cfg.spotify [ spotify ])
+      (lib.optionals cfg.teamviewer [ teamviewer ])
+      (lib.optionals cfg.rustdesk [ rustdesk ])
     ];
 
     home.sessionVariables = {
