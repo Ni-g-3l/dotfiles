@@ -62,8 +62,11 @@
     # Essential tools: build-essential, git, curl, xclip, nettools, htop
     ./modules/essentials.nix
 
-    # Desktop apps: discord, zen-browser, blender, darktable, gimp
+    # Desktop apps: zen-browser, zed-editor, rio
     ./modules/apps.nix
+
+    # Flatpak apps: blender, darktable, gimp, discord, spotify, bitwarden
+    ./modules/flatpak.nix
   ];
 
   #############################################################################
@@ -164,6 +167,12 @@
     "t." = "go-task";
     "c." = "cargo";
     "r." = "rustc";
+    "blender" = "flatpak run --branch=stable org.blender.Blender";
+    "darktable" = "flatpak run --branch=stable org.darktable.Darktable";
+    "gimp" = "flatpak run --branch=stable org.gimp.GIMP";
+    "discord" = "flatpak run --branch=stable com.discordapp.Discord";
+    "spotify" = "flatpak run --branch=stable com.spotify.Client";
+    "bitwarden" = "flatpak run --branch=stable com.bitwarden.desktop";
   };
 
   #############################################################################
@@ -202,15 +211,19 @@
 
   apps = {
     enable = true;
-    discord = true;
     zen-browser = true;
+    zed-editor = true;
+    teamviewer = true;
+  };
+
+  flatpak-apps = {
+    enable = true;
     blender = true;
     darktable = true;
     gimp = true;
-    bitwarden = true;
+    discord = true;
     spotify = true;
-    teamviewer = true;
-    rustdesk = true;
+    bitwarden = true;
   };
 
   #############################################################################
@@ -334,6 +347,11 @@
     ".config/zellij/config.kdl".source = ./config/zellij/config.kdl;
     ".config/zellij/layouts/base.kdl".source = ./config/zellij/layouts/base.kdl;
 
-
+    # --------------------------------------------------------------------------
+    # Zed - Text Editor
+    # --------------------------------------------------------------------------
+    # Text Editor
+    ".config/zed/settings.json".source = ./config/zed/settings.json;
+    ".config/zed/keymap.json".source = ./config/zed/keymap.json;
   };
 }

@@ -19,6 +19,9 @@
         inherit system;
         config.allowUnfree = true;
       };
+      rio-pkg = rio.packages.${system}.rio.overrideAttrs (old: {
+        nativeBuildInputs = (old.nativeBuildInputs or []) ++ [ pkgs.glslang ];
+      });
     in
 
     {
@@ -29,7 +32,7 @@
           ({ pkgs, ... }: {
             programs.rio = {
               enable = true;
-              package = rio.packages.${system}.rio;
+              package = rio-pkg;
             };
           })
           ./home.nix
